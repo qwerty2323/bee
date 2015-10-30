@@ -2,18 +2,15 @@
 
 require 'csv'
 
-class Harvest
-  attr_accessor :bee_id, :day, :pollen_id, :harvested
-
   
 bee_efficiency = []
 
-for bee_id in (1..15) do
+(1..15).each do |bee_id|
 
-  harvest = CSV.read("../data/harvest.csv", converters: :numeric)
+  dayrun = CSV.read("../data/harvest.csv", converters: :numeric)
 
   harvested = []  
-  harvest.select do |row|
+  dayrun.select do |row|
 
     harvested << row[3] if row[0] == bee_id
 
@@ -23,10 +20,7 @@ bee_efficiency << harvested.reduce(:+)/harvested.length
 
 end
 
-for n in (0..14) do
+(0..14).each do |n|
   p "Number of the most efficient bee is #" + (n+1).to_s if bee_efficiency[n] == bee_efficiency.max
   p "Number of the least efficient bee is #" + (n+1).to_s if bee_efficiency[n] == bee_efficiency.min
-end
-
-
 end

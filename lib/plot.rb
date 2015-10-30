@@ -2,7 +2,6 @@
 
 require 'csv'
 require 'gnuplot'
-require 'gsl'
 
 days = Array.new
 mg = Array.new
