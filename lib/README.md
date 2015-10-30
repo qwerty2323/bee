@@ -22,15 +22,17 @@ Runs gnuplot to create a plot of harvested pollen by day.
 
 ##Completeness status
 
-- [ ] Easy to understand -> :sob:
-- [ ] Tests/Specs
-   - [ ]     -> Figure out what to test
-- [x] Any interface
-   - [ ]     -> Planning on making Cli (if I can make it on time)
+(_) Easy to understand -> :sob: not yet
+(_) Tests/Specs     -> Figure out what to test
+(_) Any interface -> Planning on making Cli (if I can make it on time)
+
+##Easy to understand
+
+(*) RubyWay
 
 ## Specs
 
-No specs :cry: at the time
+No specs :cry: at the time.
 
 
 ## Contributing
