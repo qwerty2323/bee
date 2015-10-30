@@ -9,7 +9,7 @@ CSV.foreach("../data/pollens.csv") do |row|
 end
 sums = []
 
-for pollen_id in (1..5) do
+(1..5).each do |pollen_id|
 
   harvest = CSV.read("../data/harvest.csv", converters: :numeric)
 
