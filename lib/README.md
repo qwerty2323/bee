@@ -20,13 +20,13 @@ ruby plot.rb
 ```
 Runs gnuplot to create a plot of harvested pollen by day.
 
-##Requirements
+##Completeness status
 
 - [ ] Easy to understand -> :sob:
 - [ ] Tests/Specs
-   - [ ]    -> Figure out what to test
+   - [ ]     -> Figure out what to test
 - [x] Any interface
-   - [ ]    -> Planning on making Cli (if I can make it on time)
+   - [ ]     -> Planning on making Cli (if I can make it on time)
 
 ## Specs
 
