@@ -18,16 +18,18 @@ days.each {|n| dates << Date.strptime(n,"%Y-%m-%d")}
 
 Gnuplot.open do |gp|
   Gnuplot::Plot.new( gp ) do |plot|
-    plot.timefmt "'%Y%m%d'"
+    plot.timefmt "'%Y-%m-%d'"
     plot.title  "Best Harvest Day"
     plot.xlabel "Time"
-    plot.xrange "[('2013-04-01'):('2013-06-01')]"
+    plot.xdata "time"
+    plot.xrange '["2013-04-01":"2013-06-01"]'
     plot.ylabel "Harvested"
     
 
     plot.data << Gnuplot::DataSet.new( [dates,mg] ) do |ds|
-      ds.with = "linespoints"
+      ds.with = "points"
       ds.title = "Pollen harvested"
+      ds.using = '1:2'
     end
   end
 end
