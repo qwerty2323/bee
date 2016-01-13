@@ -1,39 +1,28 @@
-# Bee Hive
+# Beehive Challenge
 :honeybee: :honeybee: :honeybee: :honeybee: :honeybee:
-This is a fairy tale about bee hive.
+Get OOP or die trying.
 
-##Harvest
-```ruby
-ruby harvest.rb
-```
-Returns the most and the least efficient bee in a hive.
+##Must answer this questions:
 
-##Pollen
-```ruby
-ruby pollen.rb
-```
+- [x] From what kind of pollen the most sugar was produced?
+- [x] What kind of pollen was the most popular?
+- [x] Which day was the best for harvest? Which was the worst?
+- [x] Which bee was the most efficient? Which was the least?
+- [ ] Tables/plots for days and bees
+- [x] Eliminate duplication? _DRY_
 
-Return the most popular pollen by bees.
-##Plot
-```ruby
-ruby plot.rb
-```
-Runs gnuplot to create a plot of harvested pollen by day.
 
-##Completeness status
+## Specs 
 
-- [ ] Easy to understand -> :sob: not yet
-- [ ] Tests/Specs     -> Figure out what to test
-(_) Any interface -> Planning on making Cli (if I can make it on time)
+_Under Contruction_
 
-##Easy to understand
-
-(*) RubyWay
-
-## Specs
-
-No specs :cry: at the time.
-
+- [x] it 'should open the files'
+- [x] it 'should get free from structure of CSV data' -> Fill the Struct?
+- [x] it 'should get mass and pollen_id from the files to calculate sugar'
+- [x] it 'should summ up sugar value for each day'
+- [x] it 'should summ up sugar value and divide by day.count for each bee_id'
+- [x] it 'should summ up mass for each pollen_id'
+- [ ] it 'should create tables/plots for bees and days
 
 ## Contributing
 
